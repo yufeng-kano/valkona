@@ -62,8 +62,10 @@
 | [`modules/topology/index.md`](modules/topology/index.md) | Topology 模組：Layer-local access intent。 |
 | [`modules/topology/schema.sql`](modules/topology/schema.sql) | Topology 持久化 schema |
 | [`operations/configuration.md`](operations/configuration.md) | 執行期設定載入與必要群組 |
+| [`operations/glossary.md`](operations/glossary.md) | 契約用語 → 對外／人話對照與命名原則 |
 | [`operations/implementation-plan.md`](operations/implementation-plan.md) | 實作階段與順序 |
-| [`operations/index.md`](operations/index.md) | 營運文件：設定、Phase 0 證據與實作順序。 |
+| [`operations/index.md`](operations/index.md) | 營運文件：設定、Phase 0 證據、實作順序、使用者旅程與詞彙對照。 |
 | [`operations/phase0-validation.md`](operations/phase0-validation.md) | Phase 0 NetBird 證據驗證清單 |
+| [`operations/user-journeys.md`](operations/user-journeys.md) | member／admin 使用旅程與裝置歸屬路徑 |
 | [`PRODUCT.md`](PRODUCT.md) | 產品邊界與 MVP 成果 |
 
