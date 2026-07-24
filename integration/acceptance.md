@@ -1,0 +1,21 @@
+# Integration Acceptance
+
+- [ ] Domain contracts contain no HTTP routes or dependency on HTTP transport.
+- [ ] HTTP routes map to application/composition operations only.
+- [ ] A topology mutation and Runtime work-version increment commit atomically.
+- [ ] Lost in-process wakeups are recovered by persisted pending sweeps.
+- [ ] Inventory application, Core observation completion and all affected-Layer work-version increments commit atomically.
+- [ ] A crash after inventory fetch but before commit does not persist Peer changes without pending markers.
+- [ ] Stable Peer changes dirty only referencing Layers.
+- [ ] Peer owner and identity-binding mutations commit with all affected-Layer work-version increments.
+- [ ] `connected`/`last_seen` changes do not dirty Layers.
+- [ ] `sealed` rejects new topology, identity, Enrollment and backend writes while allowing authorized reads/diagnostics.
+- [ ] An already-open local desired-state transaction may commit after sealing, but no later backend write starts.
+- [ ] Startup exposes no HTTP interface before safety inspection succeeds.
+- [ ] Account identity mismatch fails startup or seals an active process.
+- [ ] Cross-module FK are created only by integration migrations/schema.
+- [ ] Hard Layer deletion locks Layer/ProjectionState and checks eligibility in the same transaction.
+- [ ] Audit append failure follows the transaction policy of the invoking use case; security/admin mutations do not silently lose their audit event.
+- [ ] User and system principals are explicit.
+- [ ] One active process is enforced by a PostgreSQL advisory lock.
+- [ ] No OperationPermit/capability is passed through module signatures.

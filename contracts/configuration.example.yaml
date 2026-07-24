@@ -1,0 +1,39 @@
+schema: valkona.configuration.v1
+
+server:
+  listen: "127.0.0.1:8080"
+
+database:
+  dsn_env: VALKONA_DATABASE_DSN
+  advisory_lock_key: 3570114
+
+oidc:
+  issuer: "https://idp.example.com"
+  client_id: "valkona"
+  audience: "valkona"
+  bootstrap_admins:
+    - issuer: "https://idp.example.com"
+      subject: "replace-with-stable-subject"
+
+netbird:
+  api_url: "https://api.netbird.io"
+  api_token_env: VALKONA_NETBIRD_API_TOKEN
+  expected_account_identity: "replace-with-phase0-proven-stable-identity"
+
+sync:
+  netbird_interval_seconds: 60
+  peer_presence_freshness_seconds: 180
+
+enrollment:
+  expires_seconds: 86400
+  poll_interval_seconds: 15
+
+reconciliation:
+  sweep_interval_seconds: 30
+  debounce_milliseconds: 500
+
+retention:
+  unreferenced_layer_revisions_days: 30
+  reconcile_attempts_days: 30
+  core_observations_days: 14
+  audit_days: 180

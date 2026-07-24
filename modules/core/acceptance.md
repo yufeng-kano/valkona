@@ -1,0 +1,21 @@
+# Core Acceptance
+
+- [ ] Module contract contains no HTTP route or transport dependency.
+- [ ] OIDC uniqueness is issuer/subject and first login never implies admin.
+- [ ] Failed/partial inventory never marks Peers missing.
+- [ ] Inventory fetch is separate from transactional application.
+- [ ] Core observation completion and affected-Layer pending markers can commit in one integration transaction.
+- [ ] Stale running observations are recovered as failed.
+- [ ] Complete inventory marks absent Peers missing.
+- [ ] Presence telemetry does not appear in topology-relevant changed Peer IDs.
+- [ ] Attribution uses explicit evidence and conflict yields ambiguous without automatic transfer.
+- [ ] IdentityCommandPort returns every Peer whose topology-relevant ownership/attribution facts changed.
+- [ ] A formerly owned ambiguous Peer retains the owner pair but is not resolved; ownerless ambiguity stores both fields null.
+- [ ] PeerReader exposes contract values, not persistence rows/NetBird DTOs.
+- [ ] Enrollment idempotency is stored on Enrollment and prevents duplicate remote creates.
+- [ ] One internal Enrollment state is the persistence authority; public status is derived.
+- [ ] Setup Key plaintext is absent from database/log/audit/GET responses.
+- [ ] `outcome_uncertain` produces needs_attention rather than automatic retry/adoption.
+- [ ] Ownership commits before remote cleanup.
+- [ ] Enrollment reconciliation authorizes immediately before every remote write and stops starting writes after sealing.
+- [ ] All exported signatures reference Core-owned or imported boundary types.
