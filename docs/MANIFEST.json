@@ -2,225 +2,295 @@
   "package": "valkona_v0_11_4_concurrency_type_closure_2026-07-15",
   "version": "0.11.4",
   "date": "2026-07-15",
-  "change_from": "0.11.4: project-wide rename to Valkona; architecture and product semantics unchanged",
+  "change_from": "0.11.4: docs reorganized under docs/ with index.md tree",
   "files": [
     {
-      "path": "ARCHITECTURE.md",
+      "path": "README.md",
+      "size": 2123,
+      "sha256": "080bcc131f02586d40efc91feedb4715798fffbf477628b16ca0b1d180e788a4"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
       "size": 4003,
       "sha256": "7f7a550fd6b0178f4ef4b0bfa94debf98c8cd4bfaacdce8d0c86e9f478e970fd"
     },
     {
-      "path": "CHANGELOG.md",
+      "path": "docs/CHANGELOG.md",
       "size": 2197,
       "sha256": "b9e3a9ef10f45f4f4ebf7728b9725bf15f732986ad1c28adc9331d4d74c2a5d3"
     },
     {
-      "path": "CONTRACTS.md",
+      "path": "docs/CONTRACTS.md",
       "size": 11229,
       "sha256": "ffde43b24d3b317be575bb2397b592078afcad22551f28e9fb7179b0566f2d2f"
     },
     {
-      "path": "DOCUMENTATION.md",
+      "path": "docs/DOCUMENTATION.md",
       "size": 2246,
       "sha256": "a4cedc80b75ff39695b8e21b18064922de4890b95a2fd2778f4dd3ea4cc8aa94"
     },
     {
-      "path": "PRODUCT.md",
+      "path": "docs/MANIFEST.json",
+      "size": 9496,
+      "sha256": "43e76c7ec325086f054316e190e7f4940f37603508f35a6ceac5dfe67eabbfd5"
+    },
+    {
+      "path": "docs/MANIFEST.md",
+      "size": 6389,
+      "sha256": "65e34f52e55ba381535e5afafafb4a504784d449c49deeb00258ebc8f011bec1"
+    },
+    {
+      "path": "docs/PRODUCT.md",
       "size": 1746,
       "sha256": "53812adb75191f14cf40c7db17aa592fefb520e0132580c8406aa9688262c1de"
     },
     {
-      "path": "README.md",
-      "size": 1850,
-      "sha256": "1d509512718d9c61e8f4f92152e98827427450e1e5e77f2a69ed88e99b327e20"
-    },
-    {
-      "path": "adr/0001-modular-monolith-and-contract-ownership.md",
+      "path": "docs/adr/0001-modular-monolith-and-contract-ownership.md",
       "size": 782,
       "sha256": "809ebf126b5fb995f7564f70324c1e473baa4ac846ae256a05ddddb0bf3cde77"
     },
     {
-      "path": "adr/0002-per-layer-reconciliation.md",
+      "path": "docs/adr/0002-per-layer-reconciliation.md",
       "size": 639,
       "sha256": "dc286994ef466754aa570e838e20f676d50c010f8d644230affd9c953c16fce6"
     },
     {
-      "path": "adr/0003-netbird-safety-and-object-authority.md",
+      "path": "docs/adr/0003-netbird-safety-and-object-authority.md",
       "size": 934,
       "sha256": "af0e389484c92668de73747e878a2ee8db3bb8be2722ef6f65e90d842ac745b5"
     },
     {
-      "path": "adr/0004-application-contracts-and-adapters.md",
+      "path": "docs/adr/0004-application-contracts-and-adapters.md",
       "size": 784,
       "sha256": "8944ba916ec1649197541be0e3fad73d6c808efe529dc78b6b51cf75a88a7f27"
     },
     {
-      "path": "adr/0005-monotonic-work-and-gate-boundaries.md",
+      "path": "docs/adr/0005-monotonic-work-and-gate-boundaries.md",
       "size": 1177,
       "sha256": "e3ef8e1c16bbd9ac1dcd85bf3624f66686a583b2d085f31ea255a76c864533db"
     },
     {
-      "path": "adr/README.md",
-      "size": 551,
-      "sha256": "ba19c8da7424a61372463726bf2a8aff7a302627848f45d2ea380eeba50d4e06"
+      "path": "docs/adr/index.md",
+      "size": 857,
+      "sha256": "92bfb1ddb7e73a75ce855b3007f0ab1dfca1a8d06d188a5ccb050f58e4fa1fe1"
     },
     {
-      "path": "contracts/backend.md",
+      "path": "docs/contracts/backend.md",
       "size": 469,
       "sha256": "2d37a01945f31e693beffb2f52c27b7ee55cbd3af5273d2ba035e272de225eb3"
     },
     {
-      "path": "contracts/configuration.example.yaml",
+      "path": "docs/contracts/configuration.example.yaml",
       "size": 844,
       "sha256": "152541cd324c00b77a63b7915d0ece73bd3e4c14494a6cc6d8f8df49fda0f7ea"
     },
     {
-      "path": "contracts/system.md",
+      "path": "docs/contracts/index.md",
+      "size": 378,
+      "sha256": "7b0f9d1d8edc8a205c7b869c03d95ecf058095e6ef9009e006f5f9aee2164d6a"
+    },
+    {
+      "path": "docs/contracts/system.md",
       "size": 3148,
       "sha256": "87340ba788ff80236a27e4c58c859362542c3395acfc9f3352aebbfa7f73ab65"
     },
     {
-      "path": "integration/acceptance.md",
+      "path": "docs/index.md",
+      "size": 5862,
+      "sha256": "305bdae0d18a1239853d03f7184784ce4943f5bf73db18ae8b42b97b9a691540"
+    },
+    {
+      "path": "docs/integration/acceptance.md",
       "size": 1674,
       "sha256": "ba166f602c4072efb7532b74388fdc2bb2cc1025e9c120a7eb6629e608ff9426"
     },
     {
-      "path": "integration/contract.md",
+      "path": "docs/integration/contract.md",
       "size": 7411,
       "sha256": "e372af5e0706dee57a6c42d75c9e5ebf276f5675fd62af40a332f083fc17c1dd"
     },
     {
-      "path": "integration/flows.md",
+      "path": "docs/integration/flows.md",
       "size": 2218,
       "sha256": "7d8aae728341309285f78c6de617e9f3f0f46f868e52ec28649de9bdf388bd95"
     },
     {
-      "path": "integration/schema.sql",
+      "path": "docs/integration/index.md",
+      "size": 422,
+      "sha256": "30df9986bc86835370d9df46371803c37e33078e53dd6c3e5b7918b2185d90ed"
+    },
+    {
+      "path": "docs/integration/schema.sql",
       "size": 1075,
       "sha256": "c730d62a5ca16e9a16881c306098110caeb22fef9c961cb31c178475aa625cab"
     },
     {
-      "path": "interfaces/http/acceptance.md",
+      "path": "docs/interfaces/http/acceptance.md",
       "size": 770,
       "sha256": "329db4f261012e0385d93fac3c4a0acf29d6831142d8ecdcf27d4c55b1a24cd5"
     },
     {
-      "path": "interfaces/http/contract.md",
+      "path": "docs/interfaces/http/contract.md",
       "size": 2560,
       "sha256": "999c3a6dfefb71fbd68ad2de7ef921ed268e5adb799c3f38bfe454ec66ba2c37"
     },
     {
-      "path": "interfaces/http/routes.md",
+      "path": "docs/interfaces/http/index.md",
+      "size": 326,
+      "sha256": "43dff77d0f0b892b58eb088da3db0bd2ab524f41451ef7b85ab38dcfafe30dc1"
+    },
+    {
+      "path": "docs/interfaces/http/routes.md",
       "size": 2853,
       "sha256": "4d8045bf56805f87d6abd5f44e9e5d39b3c76efc98c0df79a1a4c1364021cf0f"
     },
     {
-      "path": "modules/audit/acceptance.md",
+      "path": "docs/interfaces/index.md",
+      "size": 244,
+      "sha256": "a613a20f06c8ac5a88934324c6016ce2f6cddb7b9ab0970858038748f76b4908"
+    },
+    {
+      "path": "docs/modules/audit/acceptance.md",
       "size": 482,
       "sha256": "57b3bcb0732a8004dc7e3ba18cb7786ef445e190b3fa7047e63437c681f38f2b"
     },
     {
-      "path": "modules/audit/contract.md",
+      "path": "docs/modules/audit/contract.md",
       "size": 1201,
       "sha256": "17372dd7b7df5476c08f79ecc3f20ff70f0491d57a7af9f50cba610377eab1b4"
     },
     {
-      "path": "modules/audit/design.md",
+      "path": "docs/modules/audit/design.md",
       "size": 298,
       "sha256": "45ef598d39281c4fc8f3deaf8d50ff749907b7d9c7dc51c4e0d1f33a9d18661d"
     },
     {
-      "path": "modules/audit/schema.sql",
+      "path": "docs/modules/audit/index.md",
+      "size": 370,
+      "sha256": "f232cc0206aff0bcede76fd8ded6154d24ecd16c8f55dac79468bb50b323c61f"
+    },
+    {
+      "path": "docs/modules/audit/schema.sql",
       "size": 762,
       "sha256": "13973d76bc19f2820f2e95e4a6b32fcd40443ac50e07df1cfcd47ca30ff78ce5"
     },
     {
-      "path": "modules/core/acceptance.md",
+      "path": "docs/modules/core/acceptance.md",
       "size": 1598,
       "sha256": "d587cafc19b6738f5c26c1ccdbc4db98cb93d25029a2e19b7b9d552cf9d3f5d8"
     },
     {
-      "path": "modules/core/contract.md",
+      "path": "docs/modules/core/contract.md",
       "size": 10079,
       "sha256": "ad7875c17f3d8f4c1471bc554fe1878900d3b5f56f5f5708aaa3f0aaab537511"
     },
     {
-      "path": "modules/core/design.md",
+      "path": "docs/modules/core/design.md",
       "size": 1564,
       "sha256": "38a27ad2d976625b18b38a0e55cc88e258274f50a2fc91becc234cafbe47d4fe"
     },
     {
-      "path": "modules/core/schema.sql",
+      "path": "docs/modules/core/index.md",
+      "size": 402,
+      "sha256": "08fbc90f27b1064b040a65250b991cca7ef1111449d76b4d686ba81ae3e8504c"
+    },
+    {
+      "path": "docs/modules/core/schema.sql",
       "size": 3761,
       "sha256": "cb0a8a5448284b91cc868b2e43d605876a52cb611abb8b1ab0a48edb769a503f"
     },
     {
-      "path": "modules/netbird/acceptance.md",
+      "path": "docs/modules/index.md",
+      "size": 632,
+      "sha256": "e274e5c7212949cda3f9b109b7758263612066f5d2bcdc637a728a08f90a9e08"
+    },
+    {
+      "path": "docs/modules/netbird/acceptance.md",
       "size": 759,
       "sha256": "9044efe90638f56d59b0c8f16b597515b1e2e44f3f0412762d560c6e36b5cf91"
     },
     {
-      "path": "modules/netbird/contract.md",
+      "path": "docs/modules/netbird/contract.md",
       "size": 2406,
       "sha256": "154c4829182b371adf354a12bbf388403facd9d8b06cc42842ecc28a841358e0"
     },
     {
-      "path": "modules/netbird/design.md",
+      "path": "docs/modules/netbird/design.md",
       "size": 605,
       "sha256": "83b6b16d964a518ac50c527b2b57528a6f0e555b239daf777174fbd9e4776d70"
     },
     {
-      "path": "modules/runtime/acceptance.md",
+      "path": "docs/modules/netbird/index.md",
+      "size": 329,
+      "sha256": "9040ef1fe202f0d866b37dbd807d0d9230cc7ecf468edf01b310772771017b03"
+    },
+    {
+      "path": "docs/modules/runtime/acceptance.md",
       "size": 1309,
       "sha256": "c1566511a060e1f79ab45be159d9a45132459f634ca6d0fb61bdc7432d3e9e9e"
     },
     {
-      "path": "modules/runtime/contract.md",
+      "path": "docs/modules/runtime/contract.md",
       "size": 8656,
       "sha256": "bebe0a26141dfad0d98e40cdd055c77b46b008da0a64698164987546aff6f17a"
     },
     {
-      "path": "modules/runtime/design.md",
+      "path": "docs/modules/runtime/design.md",
       "size": 1391,
       "sha256": "02c11b2217003b8ed8cc992866447b3a3987c3a6bb02d6aab42467a5c77edde7"
     },
     {
-      "path": "modules/runtime/schema.sql",
+      "path": "docs/modules/runtime/index.md",
+      "size": 421,
+      "sha256": "bc827ab76b0ef9780ab99fd347413a702aa8a19270bbdf1ed7b772f1ef1217c5"
+    },
+    {
+      "path": "docs/modules/runtime/schema.sql",
       "size": 3075,
       "sha256": "9584106b1a2a6cd798b7529efc99e84396d12c3cd11573304e3bee4fe68b10e5"
     },
     {
-      "path": "modules/topology/acceptance.md",
+      "path": "docs/modules/topology/acceptance.md",
       "size": 751,
       "sha256": "689bf2232636ee43ac2a347258293238593ae064429d6bca2403e4f68232bbc9"
     },
     {
-      "path": "modules/topology/contract.md",
+      "path": "docs/modules/topology/contract.md",
       "size": 6535,
       "sha256": "54d7548c5f593cdb4c98ea4d1bb23226e4b9fa1149499dfb601c2c121743e776"
     },
     {
-      "path": "modules/topology/design.md",
+      "path": "docs/modules/topology/design.md",
       "size": 458,
       "sha256": "1b4a554e57442a3203c8ad52ca7dfe6504e2aa100faf9f22baa575f428eb5ad3"
     },
     {
-      "path": "modules/topology/schema.sql",
+      "path": "docs/modules/topology/index.md",
+      "size": 390,
+      "sha256": "934fae71df66d0024473a69cfd75be4e622a36bb04e342ad39d7efbc1930beb1"
+    },
+    {
+      "path": "docs/modules/topology/schema.sql",
       "size": 4235,
       "sha256": "6dac0358c0fbc299c34862e503f069a335a41800a2a0b987525b7497fd89e9dd"
     },
     {
-      "path": "operations/configuration.md",
+      "path": "docs/operations/configuration.md",
       "size": 878,
       "sha256": "ef42009715cbc55898cc171dc23fe0afc3630edd2a481b5b762178f471783eac"
     },
     {
-      "path": "operations/implementation-plan.md",
+      "path": "docs/operations/implementation-plan.md",
       "size": 1612,
       "sha256": "ba7e7aedad755e061c429818af14c7e232f90296ff0b9505b72f04e789ca750b"
     },
     {
-      "path": "operations/phase0-validation.md",
+      "path": "docs/operations/index.md",
+      "size": 407,
+      "sha256": "1bc8f87ade6757fc1be9ae93231afbc2aa7cb2c298fcaaebe7b998d653e48388"
+    },
+    {
+      "path": "docs/operations/phase0-validation.md",
       "size": 713,
       "sha256": "77a94ba8189f2e1ac8e5562c18a100217af6986f60184948c7c4f11b214c27bd"
     }

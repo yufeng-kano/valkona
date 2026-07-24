@@ -1,0 +1,35 @@
+# 文件規則
+
+- 每次執行任何任務前，必須先閱讀 `docs/index.md`，確認是否有相關文件。
+- `docs/` 是專案唯一真實來源；需求、流程、資料定義與功能行為，以 `docs/` 內文件為準。
+- 寫任何程式碼或功能改動前，必須先新增或更新 `docs/` 內的對應文件，再依文件實作。
+- 新增、移動、刪除或修改 `docs/` 內文件時，必須同步更新 `docs/index.md` 的文件路徑與摘要。
+- 若使用者需求與既有文件衝突，必須先告知衝突點，待文件更新後再改程式碼或功能。
+
+# 命名規則
+- 使用者輸入的英文詞彙、程式碼變數、函式名稱、類別名稱、檔名或指令，若有拼字、語法、單字時態錯誤，或不符合該程式語言慣用風格，需自動修正並告知使用者。
+
+# 回答與文件規則
+
+- 使用繁體中文，採台灣常用說法。
+- 先講結論，再補必要原因與下一步。
+- 句子保持短句，避免空泛說法。
+- 技術說明要具體指出檔案、指令或修改位置。
+
+# 開發規則
+
+- 不使用系統 Python；所有 Python 指令一律使用 `uv`。
+- 新增專案、套件、子模組或工具骨架時，必須優先使用該工具官方的 scaffold/init 指令，不得直接手寫整套初始設定檔。
+- Python project 必須用 `uv init` 建立，再用 `uv add`、`uv lock`、`uv sync` 管理依賴與 lockfile，不手動從零建立 `pyproject.toml` 或改 lockfile。
+- 其他生態也同理，例如前端用官方 create 指令、Electron 用官方 scaffold 或既有模板、Alembic 用 `alembic revision` 產生 migration 檔後再編輯。
+- 若官方 scaffold/init 指令和既有 repo 結構衝突，必須先說明原因，再採最小手動修改。
+- 所有程式碼必須採模組化設計；不得把 API、設定、資料庫、外部服務、驗證邏輯長期集中在單一大型檔案。
+- 程式碼禁止硬編碼環境值、帳號、密碼、金鑰、外部服務 URL、cookie 名稱、TTL、domain、檔案路徑與部署設定等等；這些值必須放在設定檔、環境變數或正式的常數設定模組中。
+- 後端 API 必須有版本路徑；第一版公開 API 使用 `/api/v1/*`，FastAPI 內部 router 使用 `/v1/*`。
+- 後端 API handler 預設使用非同步設計，也就是 `async def`。只有明確不需要 I/O 且有文件理由時，才可使用同步 handler。
+- 所有 Python 程式碼交付前必須通過 `uv run --project backend ruff check backend` 與 `uv run --project backend basedpyright -p backend`。
+- 後端重要邏輯必須開始撰寫 pytest 驗證；不是每個函式都要寫 test，但登入、安全、設定解析、資料轉換、權限、金額與 migration 等高風險邏輯要有測試。
+- 資料庫 schema 更新必須由 backend 目錄內的 Alembic migration 管理，不得直接用手動 SQL 改正式資料庫。
+- 修改前先檢查現有檔案與 git 狀態。
+- 不覆蓋使用者既有修改。
+- 交付前要檢查檔案、symlink、git diff、ruff、basedpyright、pytest、Alembic 設定與 Docker Compose 設定。
