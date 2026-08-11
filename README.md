@@ -35,4 +35,4 @@ docs/adr                 architecture decision records
 
 ## Status
 
-The contracts are implementation-ready subject to Phase 0 NetBird evidence. Phase 0 must prove the exact representations used for account identity, default all-to-all detection, built-in All Group access, Policy canonicalization, Setup Key behavior and uncertain remote-create outcomes.
+The contracts are implementation-ready subject to Phase 0 NetBird evidence. Phase 0 must prove the exact representations used for account identity, default all-to-all detection, built-in All Group access, Policy canonicalization, Setup Key behavior and uncertain remote-create outcomes..
