@@ -46,7 +46,7 @@ Rule 一律是單向的 accept。明確 deny 不在 MVP。
 
 **讀回來的 Group 和 Policy 要先正規化，才能算穩定的 hash。**
 用途：判斷有沒有變化、驗證寫入結果、偵測 drift。
-哪些欄位忽略、哪些唯讀，以 Phase 0 錄下的 fixture 為準，不用猜的。
+哪些欄位忽略、哪些唯讀，以 NetBird 實證錄下的 fixture 為準，不用猜的。
 
 ## 安全檢查
 
@@ -73,4 +73,4 @@ fake 存 User、Peer、Group、Setup Key、Policy 和帳號身分。
 - 原始 DTO 不跨過 adapter 邊界。
 - 分頁失敗不可能回傳成功的部分清單。
 - `outcome_uncertain` 絕不自動重試。
-- 正規化對 Phase 0 fixture 是決定性的。
+- 正規化對實證 fixture 是決定性的。

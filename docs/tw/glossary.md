@@ -22,6 +22,7 @@
 - **drift（飄移）**：NetBird 上的實際狀態跟 Valkona 認知的不一樣了，例如有人手動去 NetBird 改東西。
 - **migration**：資料庫 schema 的版本化修改腳本。
 - **fixture**：預先錄好的真實 API 回應，拿來當測試的比對基準。
+- **NetBird 實證**：動工前的第一個里程碑：對真實 NetBird 錄 fixture，驗證安全設計依賴的九項假設。`en/` 凍結文件稱它 Phase 0。後續里程碑依序是骨架、Core、Topology、Runtime。
 - **acceptance（驗收條件）**：一份 checklist，列出實作必須通過的行為檢查。
 - **needs_attention**：系統判斷「這個狀況我不敢自動處理」，停下來等管理員裁決的狀態。
 - **outcome_uncertain**：對外部服務發了寫入請求，但不確定到底成功沒有（例如 timeout）。這種情況禁止自動重試，因為可能做出重複的東西。

@@ -22,4 +22,4 @@ docs/dev    實作文件（程式碼出現後開始長，最終只留這區）
 
 ## Status
 
-The contracts are implementation-ready subject to Phase 0 NetBird evidence. Phase 0 must prove the exact representations used for account identity, default all-to-all detection, built-in All Group access, Policy canonicalization, Setup Key behavior and uncertain remote-create outcomes..
+The contracts are implementation-ready subject to the NetBird evidence milestone (called Phase 0 in the frozen `docs/en/`). That milestone must prove the exact representations used for account identity, default all-to-all detection, built-in All Group access, Policy canonicalization, Setup Key behavior and uncertain remote-create outcomes.

@@ -21,7 +21,7 @@
 
 ## 預計會出現的內容
 
-- Phase 0 的 NetBird 證據紀錄和 fixture 位置。
+- NetBird 實證的證據紀錄和 fixture 位置。
 - backend 專案結構和啟動方式。
 - 資料庫 migration 的操作說明。
 - 測試怎麼跑。
