@@ -1,6 +1,6 @@
 # 文件索引
 
-最後更新：2026-08-29
+最後更新：2026-08-30
 
 **這個檔案說明 `docs/` 的結構和規則。想讀懂 Valkona，從 [`tw/index.md`](tw/index.md) 的導讀開始。**
 
@@ -37,7 +37,7 @@
 | [`tw/netbird.md`](tw/netbird.md) | NetBird adapter：唯一碰 NetBird API 的地方 |
 | [`tw/audit.md`](tw/audit.md) | Audit 模組：append-only 稽核紀錄 |
 | [`tw/http-api.md`](tw/http-api.md) | HTTP API：路由、錯誤格式、驗證規則 |
-| [`tw/operations.md`](tw/operations.md) | 設定、啟動流程、Phase 0 證據、實作順序、使用者旅程 |
+| [`tw/operations.md`](tw/operations.md) | 設定、啟動流程、NetBird 實證、實作順序、使用者旅程 |
 | [`tw/decisions.md`](tw/decisions.md) | 五個架構決策（ADR）摘要 |
 | [`tw/review.md`](tw/review.md) | 架構疑慮與建議，非規格 |
 | [`en/index.md`](en/index.md) | 凍結英文文件的索引 |

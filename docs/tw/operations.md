@@ -1,6 +1,6 @@
 # 營運與實作
 
-**這份合併四件事：設定檔、啟動流程、Phase 0 證據、實作順序，最後是使用者旅程。**
+**這份合併四件事：設定檔、啟動流程、NetBird 實證、實作順序，最後是使用者旅程。**
 
 ## 設定檔
 
@@ -33,8 +33,9 @@
 啟動失敗的診斷走 CLI 和 log，因為 HTTP 根本沒開。
 另外有一個 `RunStartupDoctor` 的本地 CLI 操作可以單獨跑診斷。
 
-## Phase 0：先拿證據再寫程式
+## NetBird 實證：先拿證據再寫程式
 
+這是第一個里程碑（`en/` 凍結文件稱它 Phase 0）。
 **動手實作前，要先用真實 NetBird 錄下 fixture，證明這九件事：**
 
 1. 帳號身分有穩定的證據欄位，以及不符時的行為。
@@ -49,14 +50,16 @@
 
 adapter contract 不准發明 NetBird 沒有的保證。
 證據拿不到就 fail closed。
-如果 Phase 0 證明 API 沒有可靠的帳號身分欄位，必須先設計並驗證替代的證據機制，開機安全檢查才能成立。
+如果實證結果顯示 API 沒有可靠的帳號身分欄位，必須先設計並驗證替代的證據機制，開機安全檢查才能成立。
 
 ## 實作順序
 
-- Phase 1 骨架：模組邊界、migration runner、模組 schema 加 integration FK、advisory lock、設定和 startup doctor、Audit sink、stateful fake adapter。
-- Phase 2 Core：OIDC 和 admin bootstrap、觀察生命週期、庫存套用和 Layer 失效的共用 transaction、presence、歸屬、binding、Enrollment 狀態機和冪等。
-- Phase 3 Topology：command 和 read port、operation gate 接上應用層邊界、HTTP CRUD、transaction 內的刪除資格、引用和權限驗證。
-- Phase 4 Runtime：編譯器和 revision、work_version 掃描、CAS 完成、ObjectMap 和對齊、safety monitor 和 sealed 取消、Explain 和診斷。
+NetBird 實證之後，四個里程碑照序做：
+
+- 骨架：模組邊界、migration runner、模組 schema 加 integration FK、advisory lock、設定和 startup doctor、Audit sink、stateful fake adapter。
+- Core：OIDC 和 admin bootstrap、觀察生命週期、庫存套用和 Layer 失效的共用 transaction、presence、歸屬、binding、Enrollment 狀態機和冪等。
+- Topology：command 和 read port、operation gate 接上應用層邊界、HTTP CRUD、transaction 內的刪除資格、引用和權限驗證。
+- Runtime：編譯器和 revision、work_version 掃描、CAS 完成、ObjectMap 和對齊、safety monitor 和 sealed 取消、Explain 和診斷。
 
 **實作鐵律：**先照 contract 介面寫消費方，用 fake 測過，再接 production adapter。
 不做通用後端抽象層，不重複定義 HTTP 和 domain 型別，不在 domain 簽名裡傳安全 token。

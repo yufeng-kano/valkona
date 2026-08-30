@@ -17,11 +17,11 @@ modular monolith、fail-closed 安全、ObjectMap 權威、work_version 加 CAS�
 **建議：**程式碼開始後，型別和介面以程式碼為準（`dev/`），不要回頭維護契約編號表。
 en 那份 `CONTRACTS.md` 的大表格和 `MANIFEST.json`、`MANIFEST.md` 的 hash 清單直接放掉，不要再更新。
 
-## 高：Phase 0 是唯一正確的起點，先做它
+## 高：NetBird 實證是唯一正確的起點，先做它
 
 **問題：**整套安全設計壓在「NetBird API 有穩定的帳號身分欄位」和「全通規則可以被程式辨識」兩個未驗證的假設上。
 文件自己也承認：假設不成立，開機安全檢查就不成立。
-**建議：**在寫任何模組程式碼之前，先花時間跑完 Phase 0 的九項證據。
+**建議：**在寫任何模組程式碼之前，先花時間跑完 NetBird 實證的九項證據。
 證據不成立的話，影響的是架構核心，越晚知道改越大。
 
 ## 中：Enrollment 狀態機對 MVP 偏重
@@ -34,7 +34,7 @@ en 那份 `CONTRACTS.md` 的大表格和 `MANIFEST.json`、`MANIFEST.md` 的 has
 
 **問題：**一個 Node 一個單成員 Group，一張 Layer 一個 Policy，一條 AccessEdge 一條 Rule。
 裝置和規則多起來，NetBird 上的物件數量和 API 呼叫量會線性成長，rate limit 和對齊時間都會有感。
-**建議：**MVP 不用改設計，但 reconciliation 要一開始就做好 rate limit 的退讓處理，Phase 0 的第 8 項證據要認真錄。
+**建議：**MVP 不用改設計，但 reconciliation 要一開始就做好 rate limit 的退讓處理，NetBird 實證的第 8 項證據要認真錄。
 
 ## 中：sealed 只能重啟恢復，運維體驗差
 
@@ -62,6 +62,6 @@ en 那份 `CONTRACTS.md` 的大表格和 `MANIFEST.json`、`MANIFEST.md` 的 has
 
 ## 建議的下一步順序
 
-1. 跑 Phase 0，錄 fixture，把結果寫進 `dev/`。
-2. 用 `uv init` 建 backend 骨架，照 Phase 1 清單做。
+1. 跑 NetBird 實證，錄 fixture，把結果寫進 `dev/`。
+2. 用 `uv init` 建 backend 骨架，照骨架里程碑的清單做。
 3. 從 fake adapter 加 Core 的測試開始，Enrollment 狀態機優先。
