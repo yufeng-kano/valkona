@@ -44,3 +44,15 @@
 - 修改前先檢查現有檔案與 git 狀態。
 - 不覆蓋使用者既有修改。
 - 交付前要檢查檔案、symlink、git diff、ruff、basedpyright、pytest、Alembic 設定與 Docker Compose 設定。
+
+# 開發環境規則
+
+- 專案位置：`/srv/services/valkona`，群組 `valkona`。權限由 setgid 和 default ACL 管理，不手動 `chmod`、`chown` 或改 ACL。
+- 主目錄就是 production，只跟著 `main`。不在主目錄開發或直接改檔。
+- 開發一律用 git worktree，放在 `.worktrees/<帳號>-<主題>/`；分支名稱用 `<類型>/<主題>`，例如 `feat/enrollment`、`docs/glossary`。
+- 開發流程：`git worktree add` → 開發 → 推到 GitHub 開 PR → merge 進 `main` → `git worktree remove` 並刪除分支。
+- 部署：在主目錄執行 `git pull --ff-only`，再重啟 production 的 Docker Compose。
+- Docker Compose 一律用 `-p` 指定 project 名稱：production 用 `valkona-prod`，只在主目錄執行；dev 用 `valkona-<帳號>`，在自己的 worktree 執行。
+- dev 和 production 的資料庫、volume、port、`.env` 完全分開。dev 不讀取或複製 production 的 `.env`。
+- dev 預設使用 NetBird fake adapter。要接真的 NetBird 時只能用測試帳號，不得使用 production 的 NetBird 帳號或 token。
+- 工具設定必須排除 `.worktrees/`：`.gitignore`、`.dockerignore`、pytest `testpaths`、basedpyright `exclude`。
